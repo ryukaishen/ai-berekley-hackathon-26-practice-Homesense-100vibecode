@@ -72,8 +72,6 @@ npm run lint
 
 In this Codex workspace, npm was bootstrapped locally because the shell did not have npm on PATH. The app itself uses normal npm scripts once a Node/npm installation is available.
 
-## 60-Second Judge Demo Script
-
 1. "Most patients do not recover in the hospital. They recover at home, where loose rugs, poor lighting, unclear medication routines, and missed caregiver tasks become real risks."
 2. Open HomeSense AI and point to the headline: "Scan the home before recovery goes wrong."
 3. Click `Try Safety Scan`.
