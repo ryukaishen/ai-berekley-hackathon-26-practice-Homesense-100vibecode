@@ -1,4 +1,4 @@
-﻿import type { MobilityMetric, PatientScenario, RecoveryFinding, SymptomInput } from "../types";
+import type { MobilityMetric, PatientScenario, RecoveryFinding, SymptomInput } from "../types";
 import { concernFromScore, symptomBurdenFromInput } from "./calculateRecoveryScore";
 
 export const generateFindings = (
@@ -16,7 +16,7 @@ export const generateFindings = (
       id: "shortness-of-breath",
       title: "Shortness of breath was reported",
       detail:
-        "HomeSense treats shortness of breath as a symptom trend to escalate when severe, sudden, or worsening.",
+        "StandWise treats shortness of breath as a symptom trend to escalate when severe, sudden, or worsening.",
       plainDetail: "Shortness of breath can be important. Call for help if it is severe or sudden.",
       severity: "High",
     });

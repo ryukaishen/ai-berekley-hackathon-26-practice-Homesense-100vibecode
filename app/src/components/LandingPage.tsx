@@ -102,13 +102,13 @@ export function LandingPage({ onTryLiveCheck, onViewDashboard }: LandingPageProp
           <div className="max-w-3xl">
             <div className="mb-5 inline-flex items-center gap-2 rounded-lg border border-white/70 bg-white/78 px-3 py-2 text-sm font-black text-teal-800 shadow-sm">
               <ShieldCheck className="h-4 w-4" aria-hidden="true" />
-              HomeSense Rehab Radar
+              StandWise
             </div>
             <h1 className="text-5xl font-black leading-[0.98] text-slate-950 md:text-7xl">
               Catch recovery problems before the next fall or readmission.
             </h1>
             <p className="mt-6 max-w-2xl text-lg font-medium leading-8 text-slate-700 md:text-xl">
-              HomeSense turns a simple mobility check into a clearer recovery plan for patients, caregivers, and care
+              StandWise turns a simple mobility check into a clearer recovery plan for patients, caregivers, and care
               teams.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
@@ -141,7 +141,7 @@ export function LandingPage({ onTryLiveCheck, onViewDashboard }: LandingPageProp
         <div className="mx-auto max-w-7xl px-4 py-12">
           <div className="mb-6 flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
             <div>
-              <p className="eyebrow">Who HomeSense helps</p>
+              <p className="eyebrow">Who StandWise helps</p>
               <h2 className="mt-2 text-3xl font-black text-slate-950">Built around the handoff home.</h2>
             </div>
             <p className="max-w-2xl text-sm leading-6 text-slate-600">
@@ -169,7 +169,7 @@ export function LandingPage({ onTryLiveCheck, onViewDashboard }: LandingPageProp
           <p className="eyebrow">Why this matters</p>
           <h2 className="mt-2 text-3xl font-black text-slate-950">The problem shows up in motion before it shows up in the chart.</h2>
           <p className="mt-4 text-base leading-7 text-slate-600">
-            Patients recover in living rooms, bathrooms, bedrooms, and hallways. HomeSense makes the first 30 seconds
+            Patients recover in living rooms, bathrooms, bedrooms, and hallways. StandWise makes the first 30 seconds
             of a demo obvious: a simple check becomes a risk-organized plan.
           </p>
         </div>
@@ -189,7 +189,7 @@ export function LandingPage({ onTryLiveCheck, onViewDashboard }: LandingPageProp
             <p className="eyebrow text-amber-800">Business story</p>
             <h2 className="mt-2 text-3xl font-black text-slate-950">A practical layer for post-discharge risk operations.</h2>
             <p className="mt-4 text-base leading-7 text-slate-700">
-              HomeSense can start as a no-backend patient demo, then become a B2B workflow for hospitals, rehab teams,
+              StandWise can start as a no-backend patient demo, then become a B2B workflow for hospitals, rehab teams,
               home health agencies, and transitional-care programs.
             </p>
             <button type="button" className="mt-6 inline-flex items-center gap-2 font-black text-slate-950" onClick={onViewDashboard}>

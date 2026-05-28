@@ -1,0 +1,19 @@
+{
+  "name": "reentry-app",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "npm@10.8.2",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "node ./scripts/dev.mjs",
+    "dev:web": "npm run dev --workspace @reentry/web",
+    "dev:api": "npm run dev --workspace @reentry/api",
+    "build": "npm run build --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test:safety": "npm run test:safety --workspace @reentry/api",
+    "clean": "node ./scripts/clean.mjs"
+  }
+}

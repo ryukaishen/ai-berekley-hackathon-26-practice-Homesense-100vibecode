@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { AssessmentFlow } from "./components/AssessmentFlow";
 import { DashboardPreview } from "./components/DashboardPreview";
+import { HomePlanPage } from "./components/HomePlanPage";
 import { LandingPage } from "./components/LandingPage";
 import { ResultsPage } from "./components/ResultsPage";
 import { TopNav } from "./components/TopNav";
@@ -37,7 +38,7 @@ const symptomsFromScenario = (scenario: PatientScenario): SymptomInput =>
   );
 
 function App() {
-  const [view, setView] = useState<AppView>("landing");
+  const [view, setView] = useState<AppView>("home");
   const [selectedScenarioId, setSelectedScenarioId] = useState(mockScenarios[0].id);
   const scenario = useMemo(() => getScenarioById(selectedScenarioId), [selectedScenarioId]);
   const [symptoms, setSymptoms] = useState<SymptomInput>(() => symptomsFromScenario(mockScenarios[0]));
@@ -63,6 +64,15 @@ function App() {
     setCaregiverMode(false);
     setView("check");
     window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const chooseScenarioForPlan = (scenarioId: string) => {
+    const nextScenario = getScenarioById(scenarioId);
+    setSelectedScenarioId(scenarioId);
+    setSymptoms(symptomsFromScenario(nextScenario));
+    setTest(nextScenario.recommendedTest);
+    setResult(null);
+    setCaregiverMode(false);
   };
 
   const completeAssessment = (nextResult: AssessmentResult) => {
@@ -111,6 +121,18 @@ function App() {
       } ${prefs.plainLanguage ? "plain-language" : ""}`}
     >
       <TopNav activeView={view} backendStatus={backendStatus} prefs={prefs} onPrefsChange={setPrefs} onNavigate={navigate} />
+
+      {view === "home" ? (
+        <HomePlanPage
+          scenarios={mockScenarios}
+          scenario={scenario}
+          selectedScenarioId={selectedScenarioId}
+          onScenarioSelect={chooseScenarioForPlan}
+          onStartCheck={() => navigate("check")}
+          onOpenDashboard={() => navigate("dashboard")}
+          onOpenStory={() => navigate("landing")}
+        />
+      ) : null}
 
       {view === "landing" ? (
         <LandingPage onTryLiveCheck={() => navigate("check")} onViewDashboard={() => navigate("dashboard")} />
