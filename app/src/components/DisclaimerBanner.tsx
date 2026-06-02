@@ -1,4 +1,4 @@
-import { AlertTriangle, ShieldCheck } from "lucide-react";
+﻿import { AlertTriangle, ShieldCheck } from "lucide-react";
 
 interface DisclaimerBannerProps {
   compact?: boolean;
@@ -14,7 +14,7 @@ export function DisclaimerBanner({ compact = false }: DisclaimerBannerProps) {
         <div className="grid gap-1 text-sm leading-6">
           <p className="font-black text-slate-950">Prototype safety note</p>
           <p className="text-slate-700">
-            StandWise is a prototype for organizing recovery check information. It does not diagnose, treat,
+            HomeSense is a prototype for organizing recovery check information. It does not diagnose, treat,
             prescribe, change medication, or replace a licensed clinician. Do not enter real patient information into
             this demo.
           </p>

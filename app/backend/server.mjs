@@ -84,7 +84,7 @@ const server = createServer(async (req, res) => {
       sendJson(res, requestId, 200, {
         data: {
           status: "ok",
-          service: "standwise-api",
+          service: "homesense-api",
           version: "1.0.0",
           timestamp: new Date().toISOString(),
         },
@@ -192,5 +192,5 @@ const server = createServer(async (req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log(`StandWise API running on http://127.0.0.1:${PORT}`);
+  console.log(`HomeSense API running on http://127.0.0.1:${PORT}`);
 });

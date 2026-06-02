@@ -1,9 +1,0 @@
-node_modules
-dist
-apps/*/dist
-packages/*/dist
-apps/api/data
-.env
-.env.*
-!.env.production.example
-npm-debug.log*
