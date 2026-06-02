@@ -1,12 +1,12 @@
-# HomeSense AI
+# HomeSense AI Purpose
 
 HomeSense AI is a polished healthcare AI hackathon demo that turns a mock phone photo or walking clip into a home recovery safety scan. It highlights fall risks, recovery hazards, caregiver tasks, score improvements, and clinic-ready follow-up summaries.
 
-## One-Line Pitch
+## purpose type shi
 
 HomeSense AI turns a phone video or room photo into an AI-powered home recovery safety scan that detects fall risks, recovery hazards, caregiver tasks, and clinic follow-up needs before an injury happens.
 
-## What The Demo Shows
+## Current Features
 
 - Landing page with patient, caregiver, clinic, rehab, and home health positioning.
 - Four scenario-driven mock scans:
@@ -25,9 +25,9 @@ HomeSense AI turns a phone video or room photo into an AI-powered home recovery 
 - Clinic report generator and editable patient/caregiver message draft.
 - Accessibility toggles for large text, high contrast, plain language, and Spanish summary.
 
-## Safety Framing
+## Safety 
 
-HomeSense AI is a prototype for organizing home safety observations. It does not diagnose, treat, prescribe, replace a licensed clinician, claim HIPAA compliance, store real patient data, or tell users to start, stop, or change medication. Severe, sudden, or life-threatening symptoms require emergency services.
+HomeSense AI is currently only a prototype for organizing home safety observations. It does not diagnose, treat, prescribe, replace a licensed clinician, claim HIPAA compliance, store real patient data, or tell users to start, stop, or change medication. Severe, sudden, or life-threatening symptoms require emergency services.
 
 ## Tech Stack
 
@@ -70,7 +70,7 @@ npm run build
 npm run lint
 ```
 
-In this Codex workspace, npm was bootstrapped locally because the shell did not have npm on PATH. The app itself uses normal npm scripts once a Node/npm installation is available.
+npm was bootstrapped locally because the shell did not have npm on PATH. The app itself uses normal npm scripts once a Node/npm installation is available.
 
 1. "Most patients do not recover in the hospital. They recover at home, where loose rugs, poor lighting, unclear medication routines, and missed caregiver tasks become real risks."
 2. Open HomeSense AI and point to the headline: "Scan the home before recovery goes wrong."
@@ -95,7 +95,7 @@ In this Codex workspace, npm was bootstrapped locally because the shell did not 
 - `app/src/components/ResultsPage.tsx` - Result UI including backend triage explanation.
 - `app/src/index.css` - Updated visual design system and animation styling.
 
-## Next Steps
+## Future stuff to add
 
 - Replace mock detections with object detection and segmentation for rugs, clutter, stairs, lighting, rails, and bathroom hazards.
 - Add pose estimation for gait, turns, and support confidence.
