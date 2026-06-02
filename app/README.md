@@ -71,7 +71,7 @@ All three layers share the same underlying engines:
 baseline.ts → frictionScorer.ts → safetyRouter.ts → agentWorkflow.ts
 ```
 
-ReEntry was built first and proved the architecture. StandUnited reused it entirely —
+ReEntry was built first and proved the architecture. StandUnited reused it entirely, so
 no new engine code, just new screens and a 90-day elder care patient simulation grounded
 in real medical data.
 
