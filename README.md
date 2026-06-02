@@ -2,11 +2,11 @@
 
 StandWise is a home recovery copilot for people who are trying to recover safely after discharge, surgery, illness, or a mobility setback. It is designed for low-energy, low-literacy, caregiver-assisted use: huge buttons first, plain next steps, read-aloud support, and simple helper handoff.
 
-## One-Line Pitch
+## what is ts? 
 
 StandWise helps patients and caregivers know what to do today, when to ask for help, and how a care team should prioritize follow-up before recovery friction becomes a fall or readmission.
 
-## What The Demo Shows
+## the demo
 
 - `Today` screen that opens directly into a usable recovery plan.
 - `Big Button Mode` for older adults or overwhelmed users: "I feel okay", "Something changed", or "I need help."
@@ -23,7 +23,7 @@ StandWise helps patients and caregivers know what to do today, when to ask for h
 - Care-team dashboard with outreach priority.
 - Accessibility toggles for large text, high contrast, plain language, and Spanish summary.
 
-## Why It Is Not Just A Wrapper
+## It's not just a gpt wrapper I swear
 
 The app has local scoring and workflow logic:
 
@@ -37,9 +37,9 @@ The app has local scoring and workflow logic:
 
 Any future LLM layer should translate structured results into plain language, not replace the scoring or safety workflow.
 
-## Safety Framing
+## Safety 
 
-StandWise is a prototype for organizing recovery check information. It does not diagnose, treat, prescribe, replace a licensed clinician, claim HIPAA compliance, store real patient data, or tell users to start, stop, or change medication. Severe, sudden, or life-threatening symptoms require emergency services.
+StandWise is a only prototype for organizing recovery check information for now. It does not yet diagnose, treat, prescribe, replace a licensed clinician, claim HIPAA compliance, store real patient data, or tell users to start, stop, or change medication. Severe, sudden, or life-threatening symptoms require emergency services.
 
 ## Tech Stack
 
