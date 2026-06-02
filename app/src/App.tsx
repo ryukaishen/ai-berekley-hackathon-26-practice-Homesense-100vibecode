@@ -5,6 +5,11 @@ import { HomePlanPage } from "./components/HomePlanPage";
 import { LandingPage } from "./components/LandingPage";
 import { ResultsPage } from "./components/ResultsPage";
 import { TopNav } from "./components/TopNav";
+import { ReEntryDashboard } from "./screens/ReEntryDashboard";
+import { CareTeamDashboard } from "./screens/CareTeamDashboard";
+import { EvaluationPage } from "./screens/EvaluationPage";
+import { StandUnitedDashboard } from "./screens/StandUnitedDashboard";
+import { PatientCheckIn } from "./screens/PatientCheckIn";
 import { mockScenarios, getScenarioById } from "./data/mockScenarios";
 import type { AppView } from "./components/TopNav";
 import type { BackendStatus } from "./components/TopNav";
@@ -139,6 +144,25 @@ function App() {
       ) : null}
 
       {view === "dashboard" ? <DashboardPreview rows={dashboardRows} onOpenScenario={selectScenario} /> : null}
+
+      {view === "reentry" ? (
+        <ReEntryDashboard
+          onNavigateCareTeam={() => navigate("careteam")}
+          onNavigateEval={() => navigate("evaluation")}
+        />
+      ) : null}
+
+      {view === "careteam" ? <CareTeamDashboard /> : null}
+
+      {view === "evaluation" ? <EvaluationPage /> : null}
+
+      {view === "standalert" ? (
+        <StandUnitedDashboard onNavigatePatient={() => navigate("standpatient")} />
+      ) : null}
+
+      {view === "standpatient" ? (
+        <PatientCheckIn onNavigateDashboard={() => navigate("standalert")} />
+      ) : null}
 
       {view === "check" ? (
         <>

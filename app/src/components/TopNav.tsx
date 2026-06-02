@@ -1,8 +1,8 @@
-import { Activity, Home, LayoutDashboard, ScanLine, ShieldPlus } from "lucide-react";
+import { Activity, Home, LayoutDashboard, ScanLine, ShieldPlus, Waves, Users, FlaskConical, Heart, User } from "lucide-react";
 import type { AccessibilityPrefs } from "../types";
 import { AccessibilityToggles } from "./AccessibilityToggles";
 
-export type AppView = "home" | "landing" | "check" | "dashboard";
+export type AppView = "home" | "landing" | "check" | "dashboard" | "reentry" | "careteam" | "evaluation" | "standalert" | "standpatient";
 export type BackendStatus = "online" | "degraded" | "offline";
 
 interface TopNavProps {
@@ -17,7 +17,12 @@ const navItems = [
   { view: "home", label: "Today", icon: Home },
   { view: "check", label: "Live Check", icon: ScanLine },
   { view: "dashboard", label: "Care Team", icon: LayoutDashboard },
-  { view: "landing", label: "Story", icon: ShieldPlus },
+  { view: "reentry", label: "ReEntry", icon: Waves },
+  { view: "careteam", label: "Outreach", icon: Users },
+  { view: "evaluation", label: "How it works", icon: FlaskConical },
+  { view: "landing",      label: "Story",       icon: ShieldPlus },
+  { view: "standalert",   label: "StandUnited", icon: Heart },
+  { view: "standpatient", label: "Maria's View", icon: User },
 ] as const;
 
 const statusLabel = {
