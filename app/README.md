@@ -1,13 +1,13 @@
 # StandWise / ReEntry / StandUnited
 
-**An AI-powered early warning system for families of elderly patients with chronic conditions —
+**An AI-powered early warning system for families of elderly patients with chronic condition:
 built to detect the decline before it becomes a hospitalization.**
 
 > *My grandmother has diabetes, cardiovascular disease, and a stent. She was readmitted to
 > the hospital repeatedly, not because her treatment was wrong, but because no one detected
 > the early warning signs at home before the next crisis. When she finally got a caretaker,
 > she became happier, more active, and her readmissions dropped. One person showing up
-> changed everything. I built this because most families can't afford that person —
+> changed everything. I built this because most families can't afford that person,
 > but everyone deserves that signal.*
 
 ---
@@ -21,7 +21,7 @@ and the monitoring stops.
 
 The decline that leads to readmission doesn't happen overnight. It builds over days:
 activity drops, sleep patterns change, heart rate variability decreases. A family member
-might sense something is wrong, but they have no data — no specific, concrete signal to
+might sense something is wrong, but they have no data, for exampple no specific, concrete signal to
 point to when a stubborn elderly parent refuses to go to the doctor.
 
 **This app gives families that signal before the 11pm ER call.**
