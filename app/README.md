@@ -4,7 +4,7 @@
 built to detect the decline before it becomes a hospitalization.**
 
 > *My grandmother has diabetes, cardiovascular disease, and a stent. She was readmitted to
-> the hospital repeatedly — not because her treatment was wrong, but because no one detected
+> the hospital repeatedly, not because her treatment was wrong, but because no one detected
 > the early warning signs at home before the next crisis. When she finally got a caretaker,
 > she became happier, more active, and her readmissions dropped. One person showing up
 > changed everything. I built this because most families can't afford that person —
@@ -12,11 +12,11 @@ built to detect the decline before it becomes a hospitalization.**
 
 ---
 
-## The Problem
+## The Problem 
 
 Hospital readmissions for elderly patients with chronic conditions (heart disease, diabetes,
 hypertension) are one of the most expensive and preventable problems in healthcare. The
-clinical system does its job — surgery, treatment, discharge. Then the patient goes home,
+clinical system does its job: surgery, treatment, discharge. Then the patient goes home,
 and the monitoring stops.
 
 The decline that leads to readmission doesn't happen overnight. It builds over days:
@@ -99,7 +99,7 @@ Agent Pipeline        Only runs if safety router clears it
                       Signal → CarePlan → Caregiver → Clinician
 ```
 
-The safety layer uses hard rules — not AI judgment — to decide whether agents should run.
+The safety layer uses hard rules, not AI judgment, to decide whether agents should run.
 If SpO₂ drops below 92%, heart rate exceeds 130, or HRV is critically low, the system
 escalates immediately without waiting for a model. This is the correct architecture for
 a health application: AI where it adds value, rules where it cannot be wrong.
@@ -178,19 +178,19 @@ To use live Claude agents, create `.env.local`:
 VITE_ANTHROPIC_API_KEY=your_key_here
 ```
 
-Without an API key, the agent pipeline runs in mock mode — all UI features work normally.
+Without an API key, the agent pipeline runs in mock mode right now, all UI features work normally.
 
 ---
 
 ## Disclaimer
 
-This is a prototype built for educational and research purposes at the AI Berkeley Hackathon
+This is a prototype built for educational and research purposes to prepare for the AI Berkeley Hackathon
 2026. It is not a medical device and is not intended for clinical use. Severe symptoms always
-require emergency services. Patient data used in demos is entirely simulated.
+require emergency services. Patient data used in demos is entirely simulated for now.
 
 ---
 
 ## Built By
 
 Adam Tang — Statistics BA + Computer Science, University of Florida
-AI Berkeley Hackathon 2026
+Practice for the AI Berkeley Hackathon 2026
