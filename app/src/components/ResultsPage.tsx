@@ -1,4 +1,4 @@
-﻿import { BadgeCheck, Gauge, Info, RotateCcw } from "lucide-react";
+import { BadgeCheck, Gauge, Info, RotateCcw } from "lucide-react";
 import type { AccessibilityPrefs, AssessmentResult, PatientScenario } from "../types";
 import { CaregiverMode } from "./CaregiverMode";
 import { DisclaimerBanner } from "./DisclaimerBanner";
@@ -105,7 +105,7 @@ export function ResultsPage({
               Clinical framing
             </p>
             <p className="mt-2 text-sm leading-6 text-slate-600">
-              HomeSense uses language like mobility concern, recovery friction, symptom trend to monitor, and
+              StandWise uses language like mobility concern, recovery friction, symptom trend to monitor, and
               follow-up recommended. It never confirms a diagnosis or changes treatment.
             </p>
           </div>

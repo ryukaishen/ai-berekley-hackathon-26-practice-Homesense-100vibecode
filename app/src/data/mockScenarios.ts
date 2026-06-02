@@ -1,4 +1,4 @@
-﻿import type { PatientScenario } from "../types";
+import type { PatientScenario } from "../types";
 
 export const mockScenarios: PatientScenario[] = [
   {
@@ -41,7 +41,7 @@ export const mockScenarios: PatientScenario[] = [
         id: "walker-turn",
         title: "Turn confidence is reduced when starting to walk",
         detail:
-          "The turn segment has a cautious pattern. HomeSense organizes this as a mobility concern, not a diagnosis.",
+          "The turn segment has a cautious pattern. StandWise organizes this as a mobility concern, not a diagnosis.",
         plainDetail: "Turning after standing looks cautious.",
         severity: "Moderate",
       },
@@ -94,7 +94,7 @@ export const mockScenarios: PatientScenario[] = [
     clinicianSummary:
       "Prototype check flags elevated recovery friction: slower sit-to-stand, transient sway after standing, and cautious turn initiation after knee replacement.",
     spanishSummary:
-      "La revision simulada muestra mas dificultad para levantarse de la silla y mas inestabilidad breve. HomeSense organiza esta informacion para seguimiento; no diagnostica.",
+      "La revision simulada muestra mas dificultad para levantarse de la silla y mas inestabilidad breve. StandWise organiza esta informacion para seguimiento; no diagnostica.",
     businessFit: "Orthopedic bundled-payment recovery, home PT triage, and post-discharge readmission prevention.",
     dashboardAction: "PT follow-up recommended",
     concernLevel: "Elevated",
@@ -141,7 +141,7 @@ export const mockScenarios: PatientScenario[] = [
         id: "symptom-trend",
         title: "Dizziness is the symptom trend to monitor",
         detail:
-          "HomeSense cannot determine why dizziness is happening. It organizes the trend and recommends follow-up language.",
+          "StandWise cannot determine why dizziness is happening. It organizes the trend and recommends follow-up language.",
         plainDetail: "Track whether dizziness is getting better or worse.",
         severity: "Moderate",
       },
@@ -194,7 +194,7 @@ export const mockScenarios: PatientScenario[] = [
     clinicianSummary:
       "Prototype check flags post-ED recovery friction: dizziness paired with transient post-stand sway and fatigue after a short mobility check.",
     spanishSummary:
-      "La revision simulada muestra mareo al ponerse de pie y un aumento breve de balanceo. HomeSense ayuda a organizar la informacion; no reemplaza al equipo medico.",
+      "La revision simulada muestra mareo al ponerse de pie y un aumento breve de balanceo. StandWise ayuda a organizar la informacion; no reemplaza al equipo medico.",
     businessFit: "ED discharge follow-up, dehydration/dizziness monitoring, and avoidable return-visit reduction.",
     dashboardAction: "Call patient within 24h",
     concernLevel: "Elevated",
@@ -241,7 +241,7 @@ export const mockScenarios: PatientScenario[] = [
         id: "med-review",
         title: "Medication concern should be confirmed by a professional",
         detail:
-          "HomeSense never recommends changing medication. It creates a concise observation for a clinician or pharmacist.",
+          "StandWise never recommends changing medication. It creates a concise observation for a clinician or pharmacist.",
         plainDetail: "Do not change medicine based on the app. Ask a professional.",
         severity: "Elevated",
       },
@@ -341,7 +341,7 @@ export const mockScenarios: PatientScenario[] = [
         id: "numbness-trend",
         title: "Worsening numbness is a follow-up topic",
         detail:
-          "HomeSense does not diagnose neuropathy. It turns the symptom trend into a clear oncology or rehab discussion point.",
+          "StandWise does not diagnose neuropathy. It turns the symptom trend into a clear oncology or rehab discussion point.",
         plainDetail: "Tell the care team the numbness is getting worse.",
         severity: "Elevated",
       },
@@ -394,7 +394,7 @@ export const mockScenarios: PatientScenario[] = [
     clinicianSummary:
       "Prototype check flags elevated recovery friction: worsening numbness report plus reduced turn confidence and higher sway variability.",
     spanishSummary:
-      "La revision simulada muestra mas preocupacion al girar y mas entumecimiento reportado. HomeSense organiza el seguimiento; no diagnostica.",
+      "La revision simulada muestra mas preocupacion al girar y mas entumecimiento reportado. StandWise organiza el seguimiento; no diagnostica.",
     businessFit: "Oncology navigation, rehab referral triage, home health planning, and functional decline monitoring.",
     dashboardAction: "PT/OT follow-up recommended",
     concernLevel: "Elevated",

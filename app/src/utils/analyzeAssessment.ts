@@ -1,4 +1,4 @@
-﻿import type {
+import type {
   AssessmentMode,
   AssessmentResult,
   AssessmentTest,
@@ -53,7 +53,7 @@ const buildMessageDrafts = (
       id: "caregiver-clinic",
       title: "Caregiver to clinic",
       audience: "Clinic",
-      subject: `HomeSense recovery check update: ${scenario.shortTitle}`,
+      subject: `StandWise recovery check update: ${scenario.shortTitle}`,
       body: `Hello, I am helping ${scenario.name} organize home recovery check information. Today the selected symptoms were ${symptomText}. The supportive indicators showed ${sitTime}s for 5x sit-to-stand, ${steadiness}/100 steadiness, and ${turn}/100 turn confidence. We are not asking the app for a diagnosis or medication change. Should the care team review this trend or call us with next steps?`,
     },
     {
@@ -61,7 +61,7 @@ const buildMessageDrafts = (
       title: "Patient to PT",
       audience: "PT/OT",
       subject: `Mobility check question before follow-up`,
-      body: `Hi, I completed a HomeSense prototype mobility check for ${scenario.shortTitle}. The main concern is: ${scenario.followUpTopics[0]}. The app flagged this as recovery friction, not a diagnosis. At our next visit, can we review safe sit-to-stand, walking, turning, and home setup?`,
+      body: `Hi, I completed a StandWise prototype mobility check for ${scenario.shortTitle}. The main concern is: ${scenario.followUpTopics[0]}. The app flagged this as recovery friction, not a diagnosis. At our next visit, can we review safe sit-to-stand, walking, turning, and home setup?`,
     },
     {
       id: "home-health-note",
@@ -196,7 +196,7 @@ export const analyzeAssessment = (
     contactClinician: scenario.contactClinician,
     followUpTopics: scenario.followUpTopics,
     messageDrafts: buildMessageDrafts(scenario, metrics, symptoms),
-    supportiveSummary: `HomeSense organized this check as ${score.concernLevel.toLowerCase()} recovery friction with ${score.mobilityConfidence}/100 mobility confidence. These are supportive indicators, not a diagnosis.`,
+    supportiveSummary: `StandWise organized this check as ${score.concernLevel.toLowerCase()} recovery friction with ${score.mobilityConfidence}/100 mobility confidence. These are supportive indicators, not a diagnosis.`,
     caregiverFriendlySummary: scenario.caregiverSummary,
     clinicianSummary: scenario.clinicianSummary,
     spanishSummary: scenario.spanishSummary,
