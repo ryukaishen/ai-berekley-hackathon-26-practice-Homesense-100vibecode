@@ -7,7 +7,7 @@ built to detect the decline before it becomes a hospitalization.**
 > the hospital repeatedly, not because her treatment was wrong, but because no one detected
 > the early warning signs at home before the next crisis. When she finally got a caretaker,
 > she became happier, more active, and her readmissions dropped. One person showing up
-> changed everything. I built this because most families can't afford that person,
+> changed everything. I built this because many families can't afford that person,
 > but everyone deserves that signal.*
 
 ---
