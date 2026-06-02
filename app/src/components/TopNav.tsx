@@ -1,8 +1,8 @@
-import { Activity, Home, LayoutDashboard, ScanLine, ShieldPlus, Waves, Users, FlaskConical, Heart, User } from "lucide-react";
+import { Activity, LayoutDashboard, ScanLine, ShieldPlus } from "lucide-react";
 import type { AccessibilityPrefs } from "../types";
 import { AccessibilityToggles } from "./AccessibilityToggles";
 
-export type AppView = "home" | "landing" | "check" | "dashboard" | "reentry" | "careteam" | "evaluation" | "standalert" | "standpatient";
+export type AppView = "landing" | "check" | "dashboard";
 export type BackendStatus = "online" | "degraded" | "offline";
 
 interface TopNavProps {
@@ -14,15 +14,9 @@ interface TopNavProps {
 }
 
 const navItems = [
-  { view: "home", label: "Today", icon: Home },
+  { view: "landing", label: "Story", icon: ShieldPlus },
   { view: "check", label: "Live Check", icon: ScanLine },
   { view: "dashboard", label: "Care Team", icon: LayoutDashboard },
-  { view: "reentry", label: "ReEntry", icon: Waves },
-  { view: "careteam", label: "Outreach", icon: Users },
-  { view: "evaluation", label: "How it works", icon: FlaskConical },
-  { view: "landing",      label: "Story",       icon: ShieldPlus },
-  { view: "standalert",   label: "StandUnited", icon: Heart },
-  { view: "standpatient", label: "Maria's View", icon: User },
 ] as const;
 
 const statusLabel = {
@@ -36,12 +30,12 @@ export function TopNav({ activeView, backendStatus, prefs, onPrefsChange, onNavi
     <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/88 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-3 lg:flex-row lg:items-center lg:justify-between">
         <div className="flex items-center justify-between gap-3">
-          <button type="button" className="flex items-center gap-3 text-left" onClick={() => onNavigate("home")}>
+          <button type="button" className="flex items-center gap-3 text-left" onClick={() => onNavigate("landing")}>
             <span className="grid h-10 w-10 place-items-center rounded-lg bg-slate-950 text-white shadow-sm">
               <Activity className="h-5 w-5" aria-hidden="true" />
             </span>
             <span>
-              <span className="block text-lg font-black text-slate-950">StandWise</span>
+              <span className="block text-lg font-black text-slate-950">HomeSense Rehab Radar</span>
               <span className="block text-xs font-bold text-slate-500">Home recovery mobility checks</span>
             </span>
           </button>
